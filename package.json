@@ -1,25 +1,26 @@
 {
-  "name": "oauth_playlist",
+  "name": "oauth-playlist",
   "version": "1.0.0",
-  "description": "oauth Application using Passport js",
+  "description": "Course files for The Net Ninja OAuth playlist on YouTube",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "mahadikrohini@gmail.com",
-  "license": "ISC",
-  "dependencies": {
-    "ejs": "^2.5.8",
-    "express": "^4.16.3",
-    "passport": "^0.4.0",
-    "passport-google-oauth20": "^1.0.0"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mahadikrohini/NodeJSAdvancedConcept.git"
   },
+  "author": "The Net Ninja",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/mahadikrohini/NodeJSAdvancedConcept/issues"
   },
-  "homepage": "https://github.com/mahadikrohini/NodeJSAdvancedConcept#readme"
+  "homepage": "https://github.com/mahadikrohini/NodeJSAdvancedConcept#readme",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.3",
+    "passport": "^0.4.0",
+    "passport-google-oauth20": "^1.0.0"
+  },
+  "devDependencies": {}
 }
