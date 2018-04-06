@@ -1,19 +1,20 @@
 const express = require('express');
-const authRouter = require('./routers/auth-routes')
+const authRoutes = require('./routes/auth-routes');
+const passportSetup = require('./config/passport-setup');
+
 const app = express();
 
+// set view engine
+app.set('view engine', 'ejs');
 
-//set up view engine...
-app.set('view engine','ejs');
+// set up routes
+app.use('/auth', authRoutes);
 
-//set up routes
-app.use('/auth', authRouter)
+// create home route
+app.get('/', (req, res) => {
+    res.render('home');
+});
 
-//Create Home Route...
-app.get('/',(req, res)=>{
-    res.render('home')
-})
-
-app.listen(3000,()=>{
-    console.log('listening for requests on port 3000')
-})
+app.listen(3000, () => {
+    console.log('app now listening for requests on port 3000');
+});
